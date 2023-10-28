@@ -18,7 +18,7 @@ const database = mysql.createConnection({
 });
 
 function getMessages(_, response) {
-  const q = 'SELECT * FROM chat';
+  const q = 'SELECT * FROM chat1';
   database.query(q, (erro, data) => {
     if (erro) {
       return response.json(erro);
@@ -28,7 +28,7 @@ function getMessages(_, response) {
 }
 
 function addMessages(req, res) {
-  const q = 'INSERT INTO chat(content, horario, usuarioName) VALUES(?, ?, ?)';
+  const q = 'INSERT INTO chat1(content, horario, usuarioName) VALUES(?, ?, ?)';
 
   const valores = [req.body.content, req.body.horario, req.body.usuarioName];
 
