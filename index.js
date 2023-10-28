@@ -11,10 +11,10 @@ app.use(express.json());
 app.use(router);
 
 const database = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'willdev123',
-  database: 'chat',
+  host: 'bzg8krmc090rpnpjmaxk-mysql.services.clever-cloud.com',
+  user: 'utasyk0s3bp0isrm',
+  password: 'EXXPtrMAL53pXVOZbgxj',
+  database: 'bzg8krmc090rpnpjmaxk',
 });
 
 function getMessages(_, response) {
