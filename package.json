@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "vercel-build": "npm start database deploy"
+    "vercel-build": "npm run database deploy"
   },
   "keywords": [],
   "author": "",
